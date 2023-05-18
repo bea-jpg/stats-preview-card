@@ -24,7 +24,7 @@ body {
     background-color: var(--very-dark-blue);
     font-family: var(--font-inter);
     color: var(--white);
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -101,4 +101,38 @@ h1 {
     font-weight: var(--weight-bold);
     color: var(--white);
     margin: 25px 0 10px;
+}
+
+/* Mobile */
+
+@media screen and (max-width:1105px) {
+    .card {
+        flex-direction: column-reverse;
+        width: 500px;
+        margin-top: 10px;
+    }
+
+    .card img, .image {
+        border-radius: 7px 7px 0 0;
+        width: 100%;
+    }
+
+    .text {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:530px) {
+    .card {
+        width: 90%;
+    }
+
+    .text {
+        padding: 40px;
+    }
+
+    .datas {
+        flex-direction: column;
+        align-items: center;
+    }
 }
